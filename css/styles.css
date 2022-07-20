@@ -165,7 +165,20 @@ img {
 }
 
 .nav-link-current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.nav-link-current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .header-nav {
@@ -321,6 +334,26 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.works-thumb {
+  position: relative;
+}
+
+.works-subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Наша команда */
