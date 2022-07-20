@@ -32,6 +32,7 @@
 
   /* others */
   --indent: 30px;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -112,6 +113,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 
 .web {
@@ -150,6 +152,7 @@ img {
   color: var(--title-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms var(--timing-function);
 }
 
 .nav-link:hover,
@@ -181,6 +184,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  transition: color 250ms var(--timing-function);
 }
 
 .header-contacts-link:hover,
@@ -249,6 +253,7 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .button-primary:hover,
@@ -376,6 +381,7 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .networks-link:hover,
@@ -406,6 +412,7 @@ img {
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  transition: color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .clients-link:hover,
@@ -441,6 +448,7 @@ img {
   margin-right: 0;
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  transition: color 250ms var(--timing-function);
 }
 
 .logo:hover,
@@ -454,6 +462,7 @@ img {
 
 .map-link {
   color: var(--primary-white-color);
+  transition: color 250ms var(--timing-function);
 }
 
 .map-link:hover,
@@ -463,6 +472,7 @@ img {
 
 .footer-contact-link {
   color: var(--footer-contacts-color);
+  transition: color 250ms var(--timing-function);
 }
 .address {
   font-style: normal;
@@ -494,6 +504,7 @@ img {
   align-items: center;
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-networks-link:hover,
@@ -535,6 +546,8 @@ img {
   letter-spacing: 0.03em;
   border: none;
   cursor: pointer;
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .gallery-button:hover,
@@ -571,6 +584,7 @@ img {
 
 .gallery-link {
   display: block;
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .gallery-link:hover,
