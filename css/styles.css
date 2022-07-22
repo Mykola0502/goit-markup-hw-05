@@ -690,7 +690,8 @@ img {
   transition: transform 250ms var(--timing-function);
 }
 
-.gallery-link:hover .gallery-overlay {
+.gallery-link:hover .gallery-overlay,
+.gallery-link:focus .gallery-overlay {
   transform: translateY(0);
 }
 
